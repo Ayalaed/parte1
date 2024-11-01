@@ -9,7 +9,7 @@ const app = express();
 
 const staticDir = path.join(__dirname, '..', 'public'); 
 
-app.set("port", process.env.PORT || 5500);
+app.set("port", process.env.PORT || 80);
 app.set('views', path.join(__dirname, '..', 'public', 'view'));
 app.set("view engine", "pug");
 
