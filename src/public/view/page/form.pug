@@ -1,0 +1,18 @@
+extends ../layout/layout.pug
+
+block content
+  h1 Formulario de Usuario
+  form(id="userForm", action="/submit" method="post")
+    div
+      label(for="name") Nombre:
+      input(type="text" id="name" name="name" required)
+    div
+      label(for="age") Edad:
+      input(type="number" id="age" name="age" required)
+    div
+      label(for="email") Correo:
+      input(type="email" id="email" name="email" required)
+    div
+      button(type="submit") Enviar
+
+  script(src="/path/to/your/script.js")
